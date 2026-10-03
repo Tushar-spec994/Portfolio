@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔅</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Tushar Kumar Das | Software Engineer</title>
+    <meta name="title" content="Tushar Kumar Das | Software Engineer" />
+    <meta
+      name="description"
+      content="Portfolio of Tushar Kumar Das - Software Engineer at BOSCH specializing in React, TypeScript, and REST API architectures."
+    />
+    <meta
+      name="keywords"
+      content="Tushar Kumar Das, Software Engineer, React Developer, TypeScript, BOSCH, HighRadius, Frontend Engineer, REST API, Portfolio"
+    />
+    <meta name="author" content="Tushar Kumar Das" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tushar Kumar Das | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software Engineer at BOSCH specializing in React, TypeScript, and REST API architectures."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent theme flickering script -->
+    <script>
+      (function () {
+        const theme =
+          localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light");
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body
+    class="bg-slate-50 dark:bg-[#090d16] text-slate-900 dark:text-slate-100 font-sans antialiased selection:bg-brand-500/20 selection:text-brand-400"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
